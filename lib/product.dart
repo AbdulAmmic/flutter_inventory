@@ -123,7 +123,7 @@ class _ProductsScreenState extends State<ProductsScreen> {
         DataColumn(label: Text('Name')),
         DataColumn(label: Text('Description')),
         DataColumn(label: Text('Price')),
-        DataColumn(label: Text('Stock')),
+        DataColumn(label: Text('Quantity')),
         DataColumn(label: Text('Image')),
         DataColumn(label: Text('Edit')),
         DataColumn(label: Text('Delete')),
@@ -135,7 +135,7 @@ class _ProductsScreenState extends State<ProductsScreen> {
           DataCell(Text(product.price.toString())),
           DataCell(Text(product.stock.toString())),
           DataCell(
-            Image.network(product.imageUrl), // Assuming imageUrl is a String containing the URL of the image
+            Image.network(product.imageUrl),
           ),
           DataCell(
             IconButton(
